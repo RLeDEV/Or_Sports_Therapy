@@ -1,0 +1,32 @@
+.introBg {
+    height: 42vw;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.introBg .introHeader {
+    position: absolute;
+    top: 53%;
+    font-size: 5vh;
+    color: #fff;
+    text-shadow: 5px 3px 5px black;    
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    padding: 5px;
+    letter-spacing: 6px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+.introBg .orHeader {
+    position: absolute;
+    top:43%;
+    font-size: 6.5vh;
+    color: rgb(128, 204, 179);
+    text-shadow: 5px 3px 5px black;    
+    width: 100%;
+    font-weight: 500;
+    padding: 5px;
+}

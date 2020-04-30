@@ -1,0 +1,40 @@
+
+#triangle-topleft {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 30px solid rgb(64, 143, 62);
+  border-right: 30px solid transparent;
+}
+
+#triangle-bottomright {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid rgb(64, 143, 62);
+  border-left: 30px solid transparent;
+}
+
+.title {
+  padding-top: 60px;
+}
+
+.title span{
+  position: relative;
+  padding: 20px;
+  font-size: 9vh;
+  font-weight: 900;
+}
+
+.content {
+  padding-bottom: 80px;
+  font-size: 3.5vh;
+  font-weight: 100;
+  color: rgb(78, 78, 78);
+}
+
+.content p {
+  line-height: 2.2rem;
+}
