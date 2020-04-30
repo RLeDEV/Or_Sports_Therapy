@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import "./App.css";
 import Navbar from "./Components/Navbar";
 import Section from "./Components/Section";
 import Intro from './Components/Intro';
 import About from './Components/About';
 import Treatments from './Components/Treatments';
+import Trainings from './Components/Trainings';
 import dummyText from "./dummyText";
+
+import "./App.css";
 class App extends Component {
   render() {
     return (
@@ -21,11 +23,10 @@ class App extends Component {
           dark={true}
           id="treatments"
         />
-        <Section
-          title="Section 3"
-          subtitle={dummyText}
+        <Trainings
+          title="Trainings"
           dark={false}
-          id="section3"
+          id="trainings"
         />
         <Section
           title="Section 4"

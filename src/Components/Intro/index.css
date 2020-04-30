@@ -13,11 +13,10 @@
     color: #fff;
     text-shadow: 5px 3px 5px black;    
     text-align: center;
-    width: 100%;
+    width: 99%;
     font-weight: 900;
     padding: 5px;
     letter-spacing: 6px;
-    /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .introBg .orHeader {
@@ -26,7 +25,7 @@
     font-size: 6.5vh;
     color: rgb(128, 204, 179);
     text-shadow: 5px 3px 5px black;    
-    width: 100%;
+    width: 99%;
     font-weight: 500;
     padding: 5px;
 }
