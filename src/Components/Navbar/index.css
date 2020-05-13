@@ -109,6 +109,10 @@
           user-select: none; /* Non-prefixed version, currently supported by chrome */
 }
 
+a {
+  transition: all 0.5s;
+}
+
 a:visited { text-decoration: none; color:#fff; }
 a:hover { text-decoration: none; color:#fff; }
 a:focus { text-decoration: none; color:#fff; }
