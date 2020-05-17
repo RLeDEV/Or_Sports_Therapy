@@ -23,13 +23,13 @@
 
 .title span{
   position: relative;
-  padding: 20px;
+  padding: 50px;
   font-size: 9vh;
   font-weight: 900;
 }
 
 .content {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   font-size: 3.5vh;
   font-weight: 100;
   color: rgb(78, 78, 78);

@@ -1,16 +1,6 @@
 #prev,#next {
-    font-size: 35px;
-    color: rgb(175, 175, 175);
     transition: all 0.5s;
-    padding-top: 15vh
-}
-
-#next {
-    margin-left: 30px;
-}
-
-#prev {
-    margin-right: 30px;
+    color: rgb(221, 221, 221);
 }
 
 #prev:hover, #next:hover{
