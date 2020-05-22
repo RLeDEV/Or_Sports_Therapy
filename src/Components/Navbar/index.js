@@ -3,6 +3,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import logo from './logo.png';
 import './index.css';
 
+const _DURATION = 1500;
+
 export default class Navbar extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
@@ -31,7 +33,7 @@ export default class Navbar extends Component {
                 spy={true}
                 smooth={true}
                 offset={-60}
-                duration={2500}
+                duration={_DURATION}
               >
                 אודות
               </Link>
@@ -43,7 +45,7 @@ export default class Navbar extends Component {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={2500}
+                duration={_DURATION}
               >
                 טיפולים
               </Link>
@@ -55,7 +57,7 @@ export default class Navbar extends Component {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={2500}
+                duration={_DURATION}
               >
                 אימונים
               </Link>
@@ -67,7 +69,7 @@ export default class Navbar extends Component {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={2500}
+                duration={_DURATION}
               >
                 גלריה
               </Link>
@@ -79,7 +81,7 @@ export default class Navbar extends Component {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={2500}
+                duration={_DURATION}
               >
                 סירטונים
               </Link>
@@ -91,7 +93,7 @@ export default class Navbar extends Component {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={2500}
+                duration={_DURATION}
               >
                 צור קשר
               </Link>
