@@ -16,9 +16,10 @@
 }
 
 .slide {
+    flex: 3;
     padding: 5px;
     box-shadow: inset 0px 0px 90px 0px rgb(158, 158, 158);
-    border-radius: 15px;
+    border-radius: 8px;
     transition: all 1.5s;
 }
 

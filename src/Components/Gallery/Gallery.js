@@ -6,7 +6,7 @@ export default class Gallery extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            width: 200,
+            width: 500,
             height: 200,
             images: [
                 '1.png',
@@ -20,26 +20,35 @@ export default class Gallery extends React.Component {
         }
     }
 
+    componentDidMount() {
+        this.interval = setInterval(() => this.slideRight(), 5000);
+      }
+    
+      componentWillUnmount() {
+        clearInterval(this.interval);
+      }
+
+    
     slideLeft() {
-        const lastIndex = this.state.images.length - 3;
+        const lastIndex = this.state.images.length - 1;
         const resetIndex = this.state.currentIndex === lastIndex;
-        const index = resetIndex ? 0 : this.state.currentIndex + 3;
+        const index = resetIndex ? 0 : this.state.currentIndex + 1;
         this.setState({currentIndex: index});
     }
 
     slideRight() {
-        const lastIndex = this.state.images.length - 3;
+        const lastIndex = this.state.images.length - 1;
         const resetIndex = this.state.currentIndex === 0;
-        const index = resetIndex ? lastIndex : this.state.currentIndex - 3  ;
+        const index = resetIndex ? lastIndex : this.state.currentIndex - 1;
         this.setState({currentIndex: index});
     }
 
     renderSliders() {
         console.log(this.props.dark)
         const index = this.state.currentIndex;
-        let firstFiveImages = this.state.images.slice(index, index + 4);
-        if(firstFiveImages.length < 4) {
-            firstFiveImages = firstFiveImages.concat(this.state.images.slice(0, 4 - firstFiveImages.length));
+        let firstFiveImages = this.state.images.slice(index, index + 3);
+        if(firstFiveImages.length < 3) {
+            firstFiveImages = firstFiveImages.concat(this.state.images.slice(0, 3 - firstFiveImages.length));
         }
         return (
             <div className={this.props.id + (this.props.dark ? " section-dark" : "")}>
