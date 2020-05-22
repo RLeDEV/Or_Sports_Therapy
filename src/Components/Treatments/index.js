@@ -11,17 +11,35 @@ export default function Treatments(props) {
             </div>
             <div className="content">
                 <p>
-                    <div className="treatment-title" align="right" style={{'paddingRight': '250px'}}>
-                        <b>טיפולי ספורטתרפיה</b>
+                    <div className="treatment-title" align="right" style={{'paddingRight': '200px'}}>
+                        <ul className="list-style" style={{'direction': 'rtl'}}>
+                            <li><b>טיפולי ספורטתרפיה</b></li>
+                        </ul>
                     </div>
                     טיפולי שיקום ומניעה מפציעות ספורט מרגע הפציעה ועד לחזרה מלאה לאימונים <br />
                     הטיפולים מתאימים לכל אוכלוסיות המתאמנים ובכל הגילאים<br />
-                    <div className="treatment-title" align="right" style={{'paddingRight': '250px'}}>
-                        <b>עיסוי רפואי</b>
+                    <div className="treatment-title" align="right" style={{'paddingRight': '200px'}}>
+                        <ul className="list-style" style={{'direction': 'rtl'}}>
+                            <li><b>עיסוי רפואי</b></li>
+                        </ul>
                     </div>
                     מיועד למטופלים שסובלים מפציעות או משרירים תפוסים לאורך זמן<br />
                    ,העיסוי כולל טיפול בטכניקת "סטריין קונטר סטריין" להורדת רגישות וכאבים, טיפול בטריגר פוינט<br />
-                   .וחבישות במידת הצורך  ,<b>STR</b> -ו <b>HR</b> שחרור לרקמות עמודות בטכניקות <br />   
+                   .וחבישות במידת הצורך  ,<b>STR</b> -ו <b>HR</b> שחרור לרקמות עמודות בטכניקות <br />
+                    <div className="treatment-title" align="right" style={{'paddingRight': '200px'}}>
+                        <ul className="list-style" style={{'direction': 'rtl'}}>
+                            <li><b>עיסוי שוודי</b></li>
+                        </ul>
+                    </div>   
+                   , נועד לשיפור הזרמת הדם בגוף על-ידי הנעת המפרקים והשרירים בגוף<br />
+                   גורם לשחרור לחצים ומתחים נפשיים <br />
+                   <div className="treatment-title" align="right" style={{'paddingRight': '200px'}}>
+                     <ul className="list-style" style={{'direction': 'rtl'}}>
+                            <li><b>עיסוי ספורטאים</b></li>
+                        </ul>
+                    </div> 
+                    .מיועד למתאמנים וספורטאים שמבצעים אימונים בתדירות גבוהה<br />
+                    .<b>STR</b> -ו <b>HR</b> במהלך העיסוי עובדים יותר על הפאסיה השרירית ועל הגמישות שלה בטכניקות<br />
                 </p>
             </div>
         </div>
