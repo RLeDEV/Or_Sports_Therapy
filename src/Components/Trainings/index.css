@@ -1,8 +1,89 @@
 .trainings {
     font-family: 'Assistant', sans-serif;
     text-align: center;
+    /* font-family: 'RobotoDraft', 'Roboto', sans-serif; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* -webkit-box-sizing: border-box; */
+    /* box-sizing: border-box; */
 }
   
 .trainings .content {
     margin-top: 40px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.trainings h5 {
+    margin: 0px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.trainings p {
+    font-size: 12px;
+}
+
+.property-card {
+    margin: 20px;
+    height: 18em;
+    width: 14em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    box-shadow: 0px 0px 10px 0px #cfcfcf;
+}
+
+.property-image {
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    top:0px;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-size:cover;
+    background-repeat:no-repeat
+}
+
+.property-description
+{
+  background-color: rgb(255, 255, 255);
+  height:12em;
+  width:14em;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* padding: 0.5em 1em; */
+  text-align:center;
+}
+
+
+.property-image:nth-child(even) {
+    background-image: url('https://www.planetfitness.com/sites/default/files/feature-image/break-workout_602724.jpg');
+}
+
+.property-image:nth-child(odd) {
+    background-image:url('https://miro.medium.com/max/1400/1*ay-T43f9simHpK17yBCMCg.jpeg');
+}
+
+.property-card:hover .property-description
+{
+  height:2em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
 }
