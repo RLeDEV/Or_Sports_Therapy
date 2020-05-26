@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Slider = ({image, width, height}) => {
     const backgroundImage = require(`./img/${image}`);
