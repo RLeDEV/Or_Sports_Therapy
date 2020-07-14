@@ -9,12 +9,16 @@ export default class Gallery extends React.Component {
             width: 500,
             height: 200,
             images: [
-                '1.png',
-                '2.png',
-                '3.png',
-                '4.png',
-                '5.png',
-                '6.png',
+                '11.jpg',
+                '22.jpg',
+                '33.jpg',
+                '44.jpg',
+                '55.jpg',
+                '66.jpg',
+                '77.jpg',
+                '88.jpg',
+                '99.jpg',
+                '100.jpg'
             ],
             currentIndex: 0
         }
@@ -53,24 +57,24 @@ export default class Gallery extends React.Component {
         return (
             <div className={this.props.id + (this.props.dark ? " section-dark" : "")}>
                 <div className="slider-items">
-                <a className="arrow left">
-                    <i className="fas fa-chevron-left" id="prev" onClick={() => this.slideLeft()}/>  
-                </a>
-                    {
-                        firstFiveImages.map((image, index) => {
-                            return (
-                                <Sliderr
-                                    image={image}
-                                    width={this.state.width}
-                                    height={this.state.height}
-                                    key={index}
-                                />
-                            )
-                        })
-                    }
-                <a className="arrow right">
-                    <i className="fas fa-chevron-right" id="next" onClick={() => this.slideRight()}/>
-                </a>
+                    <div className="arrow left">
+                        <i className="fas fa-chevron-left" id="prev" onClick={() => this.slideLeft()}/>  
+                    </div>
+                        {
+                            firstFiveImages.map((image, index) => {
+                                return (
+                                    <Sliderr
+                                        image={image}
+                                        width={this.state.width}
+                                        height={this.state.height}
+                                        key={index}
+                                    />
+                                )
+                            })
+                        }
+                    <div className="arrow right">
+                        <i className="fas fa-chevron-right" id="next" onClick={() => this.slideRight()}/>
+                    </div>
                 </div>
             </div>
         )

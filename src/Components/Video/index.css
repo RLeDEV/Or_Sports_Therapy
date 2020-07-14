@@ -1,0 +1,52 @@
+/* .video { */
+  /* margin: 10px; */
+  /* background:  */
+    /* linear-gradient(to bottom right, #30774d 50%, transparent 50.5%) no-repeat bottom, */
+    /* bottom part */
+    /* linear-gradient(0deg, #30774d, #30774d) no-repeat top; */
+   /* top portion */
+  /* color: white;
+  padding-bottom: 3em;
+  background-size: 100% 7em, 100% calc(100% - 7em)
+} */
+
+.video {
+  background: url('background.jpg') no-repeat center fixed;
+  background-size: cover;
+  min-height: 100px;
+  min-width: 200px;
+  position: relative
+}
+
+.video:before {
+  content: "";
+  border-bottom: 90px solid white;
+  border-right: 800px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.video:after {
+  content: "";
+  border-bottom: 90px solid white;
+  border-left: 800px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#video {
+  padding-left: 25rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+
+@media(max-width: 700px) {
+  .video{
+    display: none;
+  }
+}

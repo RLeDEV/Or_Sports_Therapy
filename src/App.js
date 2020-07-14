@@ -6,6 +6,7 @@ import About from './Components/About';
 import Treatments from './Components/Treatments';
 import Trainings from './Components/Trainings';
 import Gallery from './Components/Gallery';
+import Video from './Components/Video';
 import dummyText from "./dummyText";
 
 import "./App.css";
@@ -15,6 +16,11 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Intro />
+        <Video 
+          title="Video"
+          dark={false}
+          id="video"
+        />
         <About
           title="About"
           id="about"

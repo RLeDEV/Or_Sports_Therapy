@@ -9,7 +9,7 @@ export default function Intro() {
                 <i className="fas fa-running" /> אתכם לאורך כל הדרך 
                 </div>
                 <div className="orHeader">
-                אור ארץ-קדושה , מאמן ספורט אישי וספורט טרפיסט
+                אור ארץ-קדושה , מאמן כושר אישי וספורט טרפיסט
                 </div>
             </div>
         </div>

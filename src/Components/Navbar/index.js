@@ -83,18 +83,6 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={_DURATION}
               >
-                סירטונים
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="section5"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={_DURATION}
-              >
                 צור קשר
               </Link>
             </li>

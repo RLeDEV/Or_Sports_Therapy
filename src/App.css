@@ -4,8 +4,8 @@
   display: inline-block;
   width: 0;
   height: 0;
-  border-top: 30px solid rgb(64, 143, 62);
-  border-right: 30px solid transparent;
+  border-top: 3vw solid rgb(64, 143, 62);
+  border-right: 3vw solid transparent;
 }
 
 #triangle-bottomright {
@@ -13,8 +13,8 @@
   display: inline-block;
   width: 0;
   height: 0;
-  border-bottom: 30px solid rgb(64, 143, 62);
-  border-left: 30px solid transparent;
+  border-bottom: 3vw solid rgb(64, 143, 62);
+  border-left: 3vw solid transparent;
 }
 
 .title {
@@ -24,7 +24,7 @@
 .title span{
   position: relative;
   padding: 50px;
-  font-size: 9vh;
+  font-size: 4vw;
   font-weight: 900;
 }
 

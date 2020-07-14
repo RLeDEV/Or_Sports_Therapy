@@ -117,3 +117,16 @@ a:visited { text-decoration: none; color:#fff; }
 a:hover { text-decoration: none; color:#fff; }
 a:focus { text-decoration: none; color:#fff; }
 a:hover, a:active { text-decoration: none; color:rgb(85, 168, 103); transition: all 0.5s; }
+
+@media(max-width: 940px) {
+  .nav-icons {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  .nav-items {display: none;}
+  .nav-content {
+    /* padding: 0rem 8rem; */
+  }
+}

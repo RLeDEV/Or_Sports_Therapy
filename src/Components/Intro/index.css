@@ -1,6 +1,6 @@
 .introBg {
-    height: 42vw;
-    background-image: url(../images/bg.jpg);
+    height: 50vw;
+    background-image: url(../images/bg2.jpg);
     background-size: cover;
     text-align: center;
     font-family: 'Rubik', sans-serif;
@@ -8,8 +8,8 @@
 
 .introBg .introHeader {
     position: absolute;
-    top: 53%;
-    font-size: 5vh;
+    top: 40%;
+    font-size: 2vw;
     color: #fff;
     text-shadow: 5px 3px 5px black;    
     text-align: center;
@@ -21,8 +21,8 @@
 
 .introBg .orHeader {
     position: absolute;
-    top:43%;
-    font-size: 6.5vh;
+    top:30%;
+    font-size: 3.5vw;
     color: rgb(128, 204, 179);
     text-shadow: 5px 3px 5px black;    
     width: 99%;

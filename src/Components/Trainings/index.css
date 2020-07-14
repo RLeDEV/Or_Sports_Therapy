@@ -46,7 +46,7 @@
 
 .property-image {
     height:6em;
-    width:14em;
+    width:10em;
     padding:1em 2em;
     top:0px;
     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -78,12 +78,27 @@
     background-image:url('https://miro.medium.com/max/1400/1*ay-T43f9simHpK17yBCMCg.jpeg');
 }
 
-.property-card:hover .property-description
-{
-  height:2em;
-  padding:0px 1em;
-}
 .property-card:hover .property-image
 {
-  height:18em;
+  height:10em;
+}
+
+@media(max-width: 590px) {
+    .trainings .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .property-card {
+        width: 10em;
+    }
+
+    .property-description {
+        width: 10em;
+    }
+
+    .property-image {
+        width: 6em;
+    }
 }
