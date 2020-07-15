@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import Navbar from "./Components/Navbar";
-import Section from "./Components/Section";
 import Intro from './Components/Intro';
 import About from './Components/About';
 import Treatments from './Components/Treatments';
 import Trainings from './Components/Trainings';
 import Gallery from './Components/Gallery';
 import Video from './Components/Video';
-import dummyText from "./dummyText";
+import Contact from './Components/Contact';
 
 import "./App.css";
 class App extends Component {
@@ -37,15 +36,13 @@ class App extends Component {
         />
         <Gallery
           title="Gallery"
-          subtitle={dummyText}
           dark={true}
           id="gallery"
         />
-        <Section
-          title="Section 5"
-          subtitle={dummyText}
+        <Contact
+          title="Contact"
           dark={false}
-          id="section5"
+          id="contact"
         />
       </div>
     );
