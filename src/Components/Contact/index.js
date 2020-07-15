@@ -13,9 +13,12 @@ export default function Contact(props) {
                 <div className="content">
                     <div className="contact-form">
                             <div className="personal-info">
-                                <i className="fa fa-map-marker"></i><span className="form-info">ראשון לציון</span><br/>
-                                <i className="fa fa-phone"></i><span className="form-info">0546252204</span><br/>
-                                <i className="fa fa-envelope"></i><span className="form-info">kdosha47@gmail.com</span><br/>
+                                <div className="portfolio-img"/>
+                                <div className="icons">
+                                    <i className="fa fa-map-marker"><span className="form-info">קרל נטר 16, ראשון לציון</span></i>
+                                    <i className="fa fa-phone"><span className="form-info">052-6899504</span></i>
+                                    <i className="fa fa-envelope"><span className="form-info">kdosha47@gmail.com</span></i>
+                                </div>
                             </div>
                             <div>
                                 <form>
@@ -23,9 +26,8 @@ export default function Contact(props) {
                                     <input type="text" placeholder="טלפון" required/>
                                     <input type="text" placeholder="אימייל" required/>
                                     <textarea name="message" placeholder="תוכן ההודעה" rows="5" required />
-                                    {/* <button className="submit">שלח</button> */}
                                     <center>
-                                        <div className="summarySubmitBtn">
+                                        <div className="submit">
                                             <span>שלח הודעה</span>
                                         </div>
                                     </center>
