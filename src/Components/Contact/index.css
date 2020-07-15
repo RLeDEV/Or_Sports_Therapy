@@ -6,15 +6,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* 
-.container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-} */
+
+.portfolio-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 30px 30px 30px;
+    border-radius: 150px;
+    box-shadow: 0 0 20px 0 rgb(180, 180, 180);
+    background-image: url('./portfolio.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .contact-form {
-    margin-top: 30px;
     height: 100%;
     width: 100%;
     padding-bottom: 2%;
@@ -26,12 +31,7 @@
 
 .contact-form i.fa {
     display: inline;
-    font-size: 22px;
-    padding: 3%;
-    margin: 2%;
     cursor: pointer;
-    border: 2px solid rgb(139, 139, 139);
-    /* border-radius: 50%; */
 }
 
 .contact-form{
@@ -46,10 +46,26 @@
     letter-spacing: 2px;
 }
 
-.personal-info {
-    display: flex;
+.icons {
+    display: inline-flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+
+i{
+    display: inline-block;
+    margin: 10px;
+}
+
+span {
+    display: inline-block;
+    font-family: 'Assistant', sans-serif;
+    margin: 10px;
+    font-weight: 300;
+}
+
 
 input {
     padding: 10px;
@@ -79,31 +95,11 @@ textarea {
 }
 
 .submit {
-    width: 40%;
-    padding: 4px;
-    outline: none;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 33px;
-    text-align: center;
-    cursor: pointer;
-    margin-right: 3%;
-    color: rgb(0, 0, 0);
-    background: rgb(126, 184, 126);
-    border: 1px solid rgb(24, 65, 31);
-    border-radius: 15px;
-}
-
-.submit:hover {
-    border: 3px solid black;
-}
-
-.summarySubmitBtn {
     width: 70%;
     cursor: pointer;
     border-radius: 4px;
     background-color: #34964d;
+    box-shadow: inset 0 0 30px 0 rgb(87, 126, 100);
     border: none;
     padding: 5px;
     transition: all 0.5s;
@@ -111,18 +107,20 @@ textarea {
     font-weight: 900;
 }
 
-.summarySubmitBtn span {
+.submit span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.summarySubmitBtn:hover {
+.submit:hover {
     background-color: rgb(20, 94, 42);
+    box-shadow: none;
+    font-weight: 900;
 }
 
-.summarySubmitBtn span:after {
+.submit span:after {
     content: '«';
     position: absolute;
     opacity: 0;
@@ -131,11 +129,17 @@ textarea {
     transition: 0.5s;
 }
 
-.summarySubmitBtn:hover span {
+.submit:hover span {
     padding-right: 25px;
 }
 
-.summarySubmitBtn:hover span:after {
+.submit:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.whatsapp {
+    color: rgb(92, 92, 92) !important;
+    outline: none !important;
+    text-decoration: none !important;
 }

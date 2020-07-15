@@ -7,7 +7,7 @@ export default function About(props) {
         <div className={props.id}>
             <div className="section-content" id={props.id}>
                 <div className="content">
-                <video autoplay controls={true} loop width="800px   ">
+                <video controls={true} loop width="800px   ">
                     <source src={video} type="video/mp4" />
                 </video>
                 </div>

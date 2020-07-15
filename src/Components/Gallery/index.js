@@ -11,9 +11,7 @@ export default function GallerySec(props) {
                 <div id="triangle-bottomright" />
             </div>
             <div className="content">
-                <p>
-                   <Gallery />
-                </p>
+                <Gallery />
             </div>
         </div>
     );

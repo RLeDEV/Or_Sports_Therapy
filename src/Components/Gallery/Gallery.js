@@ -48,7 +48,6 @@ export default class Gallery extends React.Component {
     }
 
     renderSliders() {
-        console.log(this.props.dark)
         const index = this.state.currentIndex;
         let firstFiveImages = this.state.images.slice(index, index + 3);
         if(firstFiveImages.length < 3) {
