@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import './index.css';
 
 export default class Contact extends React.Component {
@@ -11,8 +12,31 @@ export default class Contact extends React.Component {
             messageContent: ''
         }
     }
+
+    onClickSubmit = async () => {
+        const fullName = this.state.fullName;
+        const phoneNum = this.state.phoneNum;
+        const email = this.state.email;
+        const message = this.state.messageContent;
+        // In case everything is filled
+        if(fullName !== '' && phoneNum !== '' && email !== '' && message !== '') {
+            const data = {
+                fullName,
+                phoneNum,
+                email,
+                message
+            }
+            await axios.post('/mail/sendmail', data);
+            this.setState({
+                fullName: '',
+                phoneNum: '',
+                email: '',
+                messageContent: ''
+            })
+        }
+    }
+
     render(){
-        console.log(this.state)
         return (
             <div className={this.props.id}>
                 <div className="section-content" id={this.props.id}>
@@ -40,7 +64,7 @@ export default class Contact extends React.Component {
                                         <input type="text" placeholder="אימייל" required onChange={(e) => this.setState({email: e.target.value})}/>
                                         <textarea name="message" placeholder="תוכן ההודעה" rows="5" required onChange={(e) => this.setState({messageContent: e.target.value})}/>
                                         <center>
-                                            <div className="submit">
+                                            <div className="submit" onClick={this.onClickSubmit.bind(this)}>
                                                 <span>שלח הודעה</span>
                                             </div>
                                         </center>
